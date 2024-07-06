@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- CSS Reset -->
+  <style>
+      /* Universal selector*/
+     /*Pseudo-Elements
+    ::before and ::after are pseudo-elements that can be used to insert content
+     before or after an element’s actual content.
+    */
+    *,
+    *::before,
+    *::after {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      /*In CSS, the box-sizing property is used to control how the width and height of an element are calculated.
+
+Default Behavior (content-box)
+By default, elements use the content-box value for box-sizing. This means:
+
+Width and height: Only apply to the content of the element.
+Padding and border: Are added outside of the width and height, increasing the total size of the element.
+box-sizing: border-box;
+When you set box-sizing: border-box;, it changes the way the width and height of an element are calculated:
+
+Width and height: Include the content, padding, and border.
+Total size: The specified width and height represent the total size of the element, including padding and border.
+Human Language Interpretation
+"Include the padding and border within the specified width and height of an element."*/
+    }
+    header {
+      background-color: lightblue;
+      padding: 20px;
+      margin: 10px;
+    }
+    p {
+      padding: 10px;
+      margin: 5px;
+      border: 1px solid black;
+    }
+  </style>
+</head>
+<body>
+  <header>My Website Header</header>
+  <p>This is a paragraph with default padding and margin.</p>
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Change Display Example</title>
+    <style>
+        .hidden {
+            display: none;
+        }
+        .inline {
+            display: inline;
+        }
+        .flex {
+            display: flex;
+        }
+        #paragraph {
+            border: 1px solid blue;
+            color: bisque;
+            background-color: blue;
+        }
+    </style>
+</head>
+<body>
+    <p id="paragraph">This is a paragraph.</p>
+    <button onclick="hideParagraph()">Hide Paragraph</button>
+    <button onclick="showInline()">Show Inline</button>
+    <button onclick="showFlex()">Show Flex</button>
+
+    <script>
+        const paragraph = document.querySelector('p');
+
+        function hideParagraph() {
+            paragraph.style.display = 'block';
+        }
+
+        function showInline() {
+            paragraph.style.display = 'inline';
+        }
+
+        function showFlex() {
+            paragraph.style.display = 'flex';
+        }
+    </script>
+</body>
+</html>

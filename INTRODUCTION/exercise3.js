@@ -1,0 +1,3 @@
+/* Write a Function passed that takes a student score as a parameter. 
+Your function should return true if the student has a passing grade and false if they do not.
+*/

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Event Handler Example</title>
+</head>
+<body>
+    <button id="myButton">Click me!</button>
+
+    <script>
+        function myFunction() {
+            console.log('Button was clicked!');
+        }
+
+        // Incorrect: Calls the function immediately
+        document.getElementById('myButton').onclick = myFunction();
+    </script>
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* Default box-sizing: content-box */
+        .div1 {
+  width: 200px;
+  padding: 20px;
+  border: 5px solid black;
+}
+/* box-sizing: border-box */
+.div2 {
+  box-sizing: border-box;
+  width: 200px;
+  padding: 20px;
+  border: 5px solid black;
+}
+
+
+/* Default Box Model (box-sizing: content-box;): Width and height only apply to the content. Padding and border are added outside, increasing the total size.
+Border-Box Model (box-sizing: border-box;): Width and height include padding and border. This keeps the total size consistent with what you specify.
+By using box-sizing: border-box;, you ensure that the specified width and height of an element include the padding and border, making it easier to control the size and layout of elements on your webpage. */
+    </style>    
+</head>
+<body>
+<div class="div1"></div>
+<div class="div2"></div>
+
+</body>
+</html>

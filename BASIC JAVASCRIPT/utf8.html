@@ -1,0 +1,42 @@
+<!-- Things to note about this Project
+META provdes information that helps browsers understand how to display the page
+VIEWPORT helps specify the this meta data is about the viewport
+CONTENT this part tells the browser to scale the screen size to the size of the 
+        device.
+INITIAL SCALE sets the page to its actual size at all screen widths
+rel(RELATIONSHIP) tells the browser that the linked file is a stylesheet( contains CSS) 
+        used to style HTML elements.
+href(HYPERTEXT REFERENCE) used to link files, specifying the paths
+
+
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- full meaning of charset is character set -->
+    <meta charset="utf-8" />
+    <!--A character encoding standard-->
+    <!-- This ensures that all possible characters in the world are displayed correctly ALso stands for Unicode 
+             Transformation Format
+            without specifying this your website in your browser might not display 
+        characters accurately  it simply tells the browser to use UTF-8 to understand text.
+    When we say Encode it refers to convert Human text to bit in a way the computer can understand
+Everything Here is standardized, like you 1 = 0, 2 = 1 and we all have to accept it that is what makes it a standard-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Colored Markers</title>
+     <!-- The title elements gives searh engines details about
+            page -->
+    <link rel="stylesheet" href="style.css">
+   
+  </head>
+  <body>
+    <h1>CSS Color Markers</h1>
+    <div class="container">
+        <!-- For the below first classes get overridden by second classes -->
+        <div class="marker one"></div>
+        <div class="marker"></div>
+        <div class="marker"></div>
+    </div>
+  </body>
+</html>
