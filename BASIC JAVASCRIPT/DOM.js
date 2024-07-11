@@ -69,3 +69,12 @@ Here is an example of updating the content for this paragraph element using the 
 <p id="demo">This is a paragraph.</p>
 document.querySelector("#demo").innerHTML = "<h1>Hello, innerHTML!<h1>";
 
+// getElementById
+/*
+To access an HTML element with a given id name, you can use the getElementById() method. 
+Here's an example of how to use this method:
+*/
+// Example
+<h1 id="title">Main title</h1>
+const mainTitleElement = document.getElementById('title');
+// No need of using the css selector format here

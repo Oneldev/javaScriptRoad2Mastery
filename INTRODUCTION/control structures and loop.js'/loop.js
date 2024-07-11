@@ -52,3 +52,23 @@ while (continueLoop) {
         continueLoop = false;
     }
 }
+
+// DO while LOOP
+do {
+    logic;
+}
+while(condition);
+/*
+do-while loop:
+Similar to a while loop, but guarantees at least one execution of the block of code.
+*/
+// Example
+let x = 0;
+
+do {
+    console.log("x: " + x);
+    x++;
+} while (x < 3);
+
+// Break statement
+

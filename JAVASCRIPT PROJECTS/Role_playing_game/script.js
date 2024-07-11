@@ -192,7 +192,7 @@ function buyHealth (){
 }
 
   function buyWeapon() {
-    if (currentWeaponIndex < weapons.length - 1)
+    if (currentWeaponIndex < weapons.length)
     //this balance it because it is counting from zero
      {
       if (gold >= 30) {
@@ -283,7 +283,7 @@ function attack() {
   }
 }
 function getMonsterAttackValue (level) {
-  const hit = (level * 5) - (Math.floor(Math.random() * xp));
+  const hit = (level * 5) - (Math.floor(Math.random() * xp));//stopped
   // tenaryOperator.js
   return hit > 0 ? hit : 0; 
 }
